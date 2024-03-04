@@ -1,9 +1,13 @@
 .main_header {
   box-shadow: 0px 0px 20px -10px black;
   background-color: white;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
 }
+/* container */
 .main_header > div {
   display: flex;
   justify-content: space-between;
@@ -61,4 +65,25 @@
   color: var(--text-color);
   font-size: 15px;
   padding: 30px 35px;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  .links > li > a {
+    font-size: 15px;
+    padding: 20px 25px;
+  }
+}
+/* mobile styels */
+@media (max-width: 767px) {
+  .main_header > div {
+    flex-direction: column;
+  }
+  .logo {
+    padding: 15px;
+  }
+  .links > li > a {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
 }
