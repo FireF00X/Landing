@@ -1,0 +1,115 @@
+.track_container {
+  position: relative;
+  width: 150px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 0;
+}
+
+.track_container .one,
+.track_container .two,
+.track_container .three {
+  width: 100%;
+  flex: 1;
+}
+
+.one {
+  border: 2px dashed black;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  transform: translate(70px, -6px) rotate(10deg) skew(-43deg);
+}
+
+.two {
+  position: relative;
+  border: 2px dashed black;
+  border-left: none;
+  border-bottom: none;
+  right: -36px;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  transform: translate(10px, -6px) rotate(10deg) skew(-43deg);
+}
+
+.three {
+  border: 2px dashed black;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  transform: translate(-37px, -24px) rotate(12deg) skew(-43deg);
+}
+
+.tabs_container {
+  position: absolute;
+}
+
+.tabs_title > div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabs_title > div:hover,
+.tabs_title > :global(div.active) {
+  background-color: var(--main-color);
+}
+
+.tab_title_style {
+  background-color: #333;
+  color: white;
+}
+
+.tabs_title > div:first-child {
+  top: -124px;
+  right: -198px;
+}
+
+.tabs_title > div:nth-child(2) {
+  left: -23px;
+  top: -90px;
+}
+
+.tabs_title > div:nth-child(3) {
+  left: 51px;
+  top: -19px;
+}
+
+.tabs_title > div:nth-child(4) {
+  left: -150px;
+  top: -3px;
+}
+
+.tab_container > div,
+.tab_container > p {
+  position: absolute;
+}
+
+.tab_container > div {
+  transform: translate(-136%, -249px);
+  width: 317px;
+  height: 217px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab_container > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+.tab_container > p {
+  width: 232px;
+  transform: translate(82%, 5%);
+}

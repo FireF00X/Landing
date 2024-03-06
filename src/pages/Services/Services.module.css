@@ -1,5 +1,63 @@
 .services {
-  height: 100vh;
+  /* height: 100vh; */
   padding: var(--main-padding);
   background-color: #eee;
+}
+
+/* whole content */
+.services > div > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+/* side tabs */
+.services > div > div:nth-child(2) > div:first-child {
+  /* width: 10%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+/* one side tab */
+.services > div > div:nth-child(2) > div:first-child > div {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #3333;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100px;
+  text-align: center;
+}
+
+.services > div > div:nth-child(2) > div:first-child > :global(div.active),
+.services > div > div:nth-child(2) > div:first-child > div:hover {
+  background-color: var(--main-color);
+}
+
+.tab_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.tab_container > p {
+  align-self: flex-start;
+}
+
+.tab_container > div {
+  position: relative;
+}
+
+.tab_container > div > img {
+  width: 100%;
+  height: 100%;
 }

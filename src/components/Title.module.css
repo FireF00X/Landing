@@ -33,7 +33,7 @@
   padding-bottom: 13px;
 }
 .twelve h1:before {
-  background-color: #c50000;
+  background-color: var(--main-color);
   content: "";
   display: block;
   height: 3px;
@@ -41,7 +41,7 @@
   margin-bottom: 5px;
 }
 .twelve h1:after {
-  background-color: #c50000;
+  background-color: var(--main-color);
   content: "";
   display: block;
   position: absolute;

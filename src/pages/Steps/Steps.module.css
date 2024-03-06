@@ -1,0 +1,53 @@
+.main {
+  padding: var(--main-padding);
+  position: relative;
+}
+
+.main > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main > div > div:first-child {
+  margin-bottom: 100px;
+}
+/* .main > div > div:nth-child(2) {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(15deg) scale(1.4);
+} */
+/* side tabs */
+/* .main > div > div:nth-child(3) > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin: 20px 0;
+} */
+/* one side tab */
+/* .main > div > div:nth-child(3) > div:first-child > div {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #3333;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main > div > div:nth-child(3) > div:first-child > :global(div.active),
+.main > div > div:nth-child(3) > div:first-child > div:hover {
+  background-color: var(--main-color);
+}
+.tabs_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */

@@ -56,13 +56,3 @@ a {
     width: 1170px;
   }
 }
-
-/* end global rules */
-/* .App {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-} */
-.active {
-  color: red;
-}
